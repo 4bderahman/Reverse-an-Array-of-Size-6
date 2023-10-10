@@ -1,0 +1,26 @@
+ALGORITHME InverserTableau
+
+VARIABLES
+    Tableau original(6) : Entier
+    Tableau inverse(6) : Entier
+    a, b : Entier
+
+DEBUT
+
+    POUR i <-- 0 à 5 pas 1 FAIRE
+        ecrire("Entrez une valeur pour la position ", i+1, " : ")
+        lire(original(i))
+    FIN POUR
+
+    POUR i <-- 0 à 5 pas 1 FAIRE
+        b <-- 5 - i
+        inverse(b) <-- original(i)
+    FIN POUR
+
+    ecrire("Tableau inversé : ")
+
+    POUR i <-- 0 à 5 pas 1 FAIRE
+        ecrire(inverse(i))
+
+    FIN POUR
+FIN
